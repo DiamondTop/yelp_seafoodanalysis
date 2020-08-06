@@ -1,0 +1,2 @@
+# yelp API Key
+api_key = "yGYVPNWK2B-Dt2DyxNhrFqMZwkI7shOZld-DmgjMzw1zpkXp-rsLt9wsB2WruMR3K6h56gjy8n5Gomo_URUZGUQkqcUV6zxEHQRr_qAM2bek1-LWqktwoxNL0lluXnYx"

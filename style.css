@@ -1,0 +1,38 @@
+h1 {
+  text-align: center;
+  background-color: grey;
+  color: rgba(54, 236, 99, 0.863);
+}
+
+h2 {
+  color: rgb(24, 22, 23);
+}
+
+h3 {
+  color: rgb(20, 20, 20);
+}
+
+img {
+  box-shadow: 10px 10px 5px rgb(0, 0, 0);
+}
+
+section {
+  background-color: rgb(247, 242, 242);
+}
+
+p {
+  font-size: 15px;
+  color: gray;
+}
+
+ul {
+  border-style: solid;
+  color: gray;
+  
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+

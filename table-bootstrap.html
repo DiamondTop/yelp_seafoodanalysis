@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bootstrap Table</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"
+  />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="container1">
+        <div class="row">
+          <div class="col-md-12 jumbotron text-center">
+            <h1>Belly Button Biodiversity Dashboard</h1>
+            <p>Use the interactive charts below to explore the dataset</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2">
+            <div class="well">
+              <h5>SELECT Sample:</h5>
+              <select id="selDataset" onchange="optionChanged(this.value)"></select>
+            </div>
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                <h3 class="panel-title">Sample MetaData</h3>
+              </div>
+              <div id="sample-metadata" class="panel-body"></div>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div id="pie"></div>
+          </div>
+          <div class="col-md-5">
+            <div id="gauge"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div id="bubble"></div>
+        </div>   
+      </div>
+
+
+
+
+
+
+  <div class="container2">
+    <div class="row">
+      <div class="col-md-12">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Country</th>
+              <th>State</th>
+              <th>City</th>
+              <th>Street Name</th>
+              <th>Street Number</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>United States</td>
+              <td>California</td>
+              <td>Sacramento</td>
+              <td>Carberry</td>
+              <td>88</td>
+            </tr>
+            <tr>
+              <th scope="row">2</td>
+                <td>United States</td>
+                <td>Florida</td>
+                <td>Boynton Beach</td>
+                <td>Michigan</td>
+                <td>9</td>
+            </tr>
+            <tr>
+              <th scope="row">3</td>
+                <td>United States</td>
+                <td>New York</td>
+                <td>Schenectady</td>
+                <td>Daystar</td>
+                <td>8988</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="{{ url_for('static', filename='js/bonus.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/sunburst.js') }}"></script>
+</body>
+
+
+
+</html>
