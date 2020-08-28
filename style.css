@@ -36,3 +36,10 @@ table, th, td {
   border-collapse: collapse;
 }
 
+.bar {
+  fill: blue;
+}
+
+.bar:hover {
+  fill: red;
+}

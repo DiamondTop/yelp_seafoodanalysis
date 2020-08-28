@@ -14,7 +14,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script> <!--for bar chart-->
-    
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script> for the interactive chart-->
 </head>
 <body>
 
@@ -27,9 +27,9 @@
     </div>
 
     
-    <h2>>Data collected from 300 Yelp reviews on each restaurants that words relating to seabass like seafood, fish, bass, chilean</h2>
-    <h3>1) Search terms "Seabass" among 1000 restaurants in NYC sorted by most reviewed</h3>
-    <h3>2) Search terms "Seabass" among 1000 restaurants in NYC sorted by most recommended</h3>
+    <h2>I have collected the data of 1000 restaurants with the search terms "seabass" on Yelp using API. </h2>
+    <h3>1) Search terms "Seabass" sorted by most reviewed</h3>
+    <h3>2) Search terms "Seabass" sorted by most recommended</h3>
 
 
 <select id="selDataset" onchange="getData(this.value)">
@@ -58,9 +58,9 @@
   
     <div id="bar"></div>
     <select id="selDataset2" onchange="getData(this.value)">
-        <option value="emoji_char">Shanghai Joe's @6158 reviews</option>
-        <option value="word_id">Eataly Flatiron @5499 reviews</option>
-        <option value="emoji_name">Ippudo's @3676 reviews</option>
+        <option value="emoji_char">Shanghai Joe's @6158 reviews most reviewed</option>
+        <option value="word_id">Eataly Flatiron @5499 reviews 2nd most reviewed</option>
+        <option value="emoji_name">Ippudo's @3676 reviews 3rd most reviewed</option>
       </select>    
 
   </div>  
@@ -75,6 +75,7 @@
 
 <!-- Second pie chart-->
   
+<!--<canvas id="myChart" width="400" height="400"></canvas>-->
 
 
 
@@ -88,8 +89,19 @@
 
 <!--------------------------page 3 testing page------------->
     
-    <!-- Add link to bonus -->
+    <!-- Add link to testing -->
     <p> Click <a href="testing">here</a> to visit another analysis page!</p>    
+
+<!--------------------------page 4 dashboard page------------->
+    
+    <!-- Add link to testing -->
+    <p> Click <a href="dashboard">here</a> to visit dashboard analysis page!</p>    
+
+
+<!--------------------------page 5 barchart color page------------->
+    
+    <!-- Add link to testing -->
+    <p> Click <a href="barchartcolor">here</a> to visit dashboard analysis page!</p>    
 
 
 <!--------------------------page 2 ------------------------->

@@ -125,7 +125,12 @@
 var defaultURL = "/emoji_char";
 d3.json(defaultURL).then(function(data) {
   var data = [data];
-  var layout = { margin: { t: 30, b: 100 } };
+  
+  var layout = {
+    backgroundColor: "#F5DEB3", 
+    title: "Most mentioned words",
+    color: "#F5DEB3",
+    margin: { t: 30, b: 100 } };
   Plotly.plot("bar", data, layout);
 });
 
@@ -183,17 +188,17 @@ function getData(route) {
 
 
  // "pie chart 1"
-var trace1 = {
-  labels: ["beer", "wine", "martini", "margarita",
-      "ice tea", "rum & coke", "mai tai", "gin & tonic"],
-  values: [22.7, 17.1, 9.9, 8.7, 7.2, 6.1, 6.0, 4.6],
+var trace3 = {
+  labels: ["Italian", "American", "Japanese", "French",
+      "Steakhouses", "Seafood", "Sushi Bars", "Thai","Chinese","Greek"],
+  values: [70036.0, 55469.0, 45546.0, 31345.0, 30205.0, 29282.0, 26072.0, 18930.0,12391.0,11154.0],
   type: 'pie'
 };
 
-var data = [trace1];
+var data = [trace3];
 
 var layout = {
-  title: "'Pie Chart",
+  title: "Top 10 Cuisines by number of Reviews",
 };
 
 Plotly.newPlot("plots4", data, layout);

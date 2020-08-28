@@ -290,5 +290,11 @@ def dashboard():
     """Render Home page"""
     return render_template("dashboard.html")
 
+@app.route("/barchartcolor")
+def barchartcolor():
+    """Render testing barchart color page"""
+    return render_template("barchartcolor.html")
+
+
 if __name__ == "__main__":
     app.run(debug=True)
