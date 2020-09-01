@@ -3,7 +3,11 @@ function init2() {
 var defaultURL = "/emoji_char";
 d3.json(defaultURL).then(function(data) {
   var data = [data];
-  var layout = { margin: { t: 30, b: 100 } };
+  var layout = { 
+    title: "Top 15 most mentioned words",
+    backgroundColor: "#F5DEB3", // not working
+    margin: { t: 30, b: 100 } };
+    
   Plotly.plot("bar", data, layout);
 });
 

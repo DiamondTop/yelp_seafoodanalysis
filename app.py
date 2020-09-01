@@ -28,10 +28,6 @@ app = Flask(__name__)
 #rds_connection_string = "postgres:2305nseW@localhost:5432/yelp_review_db"
 #engine = create_engine(f'postgresql://{rds_connection_string}')
 
-
-#game_database_path = "postgres:2305nseW@localhost:5432/gaming_db"
-#engine = create_engine(f"postgresql://{game_database_path}")
-
 rds_connection_string = "postgres:2305nseW@localhost:5432/yelp_review_db"
 engine = create_engine(f'postgresql://{rds_connection_string}')
 
@@ -79,9 +75,9 @@ def topreviews():
         'x': word_freq,
         'y': word,
         "type": "bar"
+        
         }
     return jsonify(data2) 
-
 
 
 
@@ -89,10 +85,10 @@ def topreviews():
 def emoji_char_data():
     """Return emoji score and emoji char"""
 
-    # Query for the top 10 Shanghai joe data
-    results3 = session.query(sgr.id, sgr.word, sgr.word_freq).\
-        order_by(sgr.word_freq.desc()).\
-        filter(sgr.word != None).\
+    # Query for the top 15 Shanghai joe data
+    results3 = session.query(tr.id, tr.word, tr.word_freq).\
+        order_by(tr.word_freq.desc()).\
+        filter(tr.word != None).\
         limit(15).all()
 
     # Create lists from the query results
@@ -103,9 +99,11 @@ def emoji_char_data():
 
     # Generate the plot trace
     trace = {
-        "x": word,
-        "y": word_freq,
-        "type": "bar"
+        "x": df["word"].values.tolist(),
+        "y": df["word_freq"].values.tolist(),
+        "type": "bar",
+        
+        #"mode": 'markers'        
     }
     return jsonify(trace)
 
@@ -114,7 +112,7 @@ def emoji_char_data():
 def emoji_id_data():
     """Return emoji score and emoji id"""
 
-    # Query for the emoji data using pandas
+    # Query for the top 15 Eataly data
     results3 = session.query(et.id, et.word, et.word_freq).\
         order_by(et.word_freq.desc()).\
         filter(et.word != None).\
@@ -139,7 +137,7 @@ def emoji_id_data():
 def emoji_name_data():
     """Return emoji score and emoji name"""
 
-    # Query for the emoji data using pandas
+    # Query for the top 15 Ippudo data
     results3 = session.query(ip.id, ip.word, ip.word_freq).\
         order_by(ip.word_freq.desc()).\
         filter(ip.word != None).\
