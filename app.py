@@ -12,7 +12,7 @@ from sqlalchemy.sql import func
 import pandas as pd
 
 from flask_sqlalchemy import SQLAlchemy
-import plotly.graph_objects as go
+#import plotly.graph_objects as go
 
 
 # create instance of Flask app
