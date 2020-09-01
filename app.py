@@ -1,7 +1,6 @@
 # import necessary libraries
 import os
-
-
+import psycopg2
 
 import sqlalchemy
 from sqlalchemy.ext.automap import automap_base
