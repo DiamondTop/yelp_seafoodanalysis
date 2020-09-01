@@ -27,6 +27,11 @@ app = Flask(__name__)
 #rds_connection_string = "postgres:2305nseW@localhost:5432/yelp_review_db"
 #engine = create_engine(f'postgresql://{rds_connection_string}')
 
+
+DATABASE_URL = os.environ['DATABASE_URL']
+
+conn = psycopg2.connect(DATABASE_URL, sslmode='require')
+
 rds_connection_string = "postgres:2305nseW@localhost:5432/yelp_review_db"
 engine = create_engine(f'postgresql://{rds_connection_string}')
 
