@@ -23,15 +23,11 @@ app = Flask(__name__)
 #################################################
 
 
-#Connect to local database
-#rds_connection_string = "postgres:2305nseW@localhost:5432/yelp_review_db"
-#engine = create_engine(f'postgresql://{rds_connection_string}')
-
-
-DATABASE_URL = os.environ['DATABASE_URL']
-
+#DATABASE_URL = os.environ['postgres://bdlzvislimyeil:c72c07abb2838abbfeca8fc6685a6663b18d8fa417a29170dc34b033d87b373f@ec2-54-160-120-28.compute-1.amazonaws.com:5432/d74fqpl6qtrn0m']
+os.environ['DATABASE_URL'] = postgres://bdlzvislimyeil:c72c07abb2838abbfeca8fc6685a6663b18d8fa417a29170dc34b033d87b373f@ec2-54-160-120-28.compute-1.amazonaws.com:5432/d74fqpl6qtrn0m
 conn = psycopg2.connect(DATABASE_URL, sslmode='require')
 
+#Connect to local database
 rds_connection_string = "postgres:2305nseW@localhost:5432/yelp_review_db"
 engine = create_engine(f'postgresql://{rds_connection_string}')
 
