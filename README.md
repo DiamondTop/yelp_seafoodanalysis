@@ -1,12 +1,26 @@
 # Welcome to the Sentiment Analysis of Yelp reviews - Seabass Edition
 
-## Background
+## Yelp reviews - Customer Reviews Analysis Dashboard with Seabass
 
-Data is more powerful when we share it with others! Let's take what we've learned about HTML and CSS to create a dashboard showing off the analysis.
-
+The purpose of the tool is to gauge the popularity of seabass in different cuisines and restaurants 
 
 <img alt="Landing page large screen" src="image/vessel1.png" width=600>
 
+
+
+## Technologies
+* Python, Matplotlib, Beautiful Soup, Seaborn, NLTK
+* PostgreSQL for Database
+* Tableau
+
+
+## Features
+* Create and Delete servers
+* Join and Leave other's servers
+* Create/Update/Destroy Channels on a server.
+* Live Chat with multiple users on a Channel
+* Direct live chat with individual Users
+* Both Direct Messages and Channel Messages can be updated and deleted with changes being broadcasted live.
 
 ## Yelp reviews - Customer Reviews Analysis Dashboard with Seabass
 
