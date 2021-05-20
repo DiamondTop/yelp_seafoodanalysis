@@ -5,7 +5,7 @@
 Data is more powerful when we share it with others! Let's take what we've learned about HTML and CSS to create a dashboard showing off the analysis.
 
 
-<img alt="Seabass Analysis" src="image/vessel1.png" width=600>
+<img alt="Landing page large screen" src="image/vessel1.png" width=600>
 
 
 ## Yelp reviews - Customer Reviews Analysis Dashboard with Seabass
@@ -52,14 +52,18 @@ The website must, at the top of every page, have a navigation menu that:
 Finally, the website must be deployed to github pages.
 
 
+### Screenshots
+
+This section contains screenshots of each page that must be built, at varying screen widths. These are a guide; you can meet the requirements without having the pages look exactly like the below images.
+
 #### Landing page
 
 Large screen:
-![Landing page large screen](image/vessel1.png))
+![Landing page large screen](image/vessel1.png)
 
 Small screen:
 ![Landing page small screen](image/vessel1.png)
-￼
+
 
 
 
