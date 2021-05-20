@@ -2,9 +2,6 @@
 import os
 import psycopg2
 
-import sqlalchemy
-from sqlalchemy.ext.automap import automap_base
-from sqlalchemy.orm import Session
 from sqlalchemy import create_engine
 from flask import Flask, jsonify, render_template, request, redirect
 from sqlalchemy.sql import func
@@ -23,42 +20,33 @@ app = Flask(__name__)
 #################################################
 
 
-#DATABASE_URL = os.environ['postgres://bdlzvislimyeil:c72c07abb2838abbfeca8fc6685a6663b18d8fa417a29170dc34b033d87b373f@ec2-54-160-120-28.compute-1.amazonaws.com:5432/d74fqpl6qtrn0m']
-#os.environ['DATABASE_URL'] = postgres://bdlzvislimyeil:c72c07abb2838abbfeca8fc6685a6663b18d8fa417a29170dc34b033d87b373f@ec2-54-160-120-28.compute-1.amazonaws.com:5432/d74fqpl6qtrn0m
-#conn = psycopg2.connect(DATABASE_URL, sslmode='require')
 
-#app.config["SQLALCHEMY_DATABASE_URI"] = "postgres://bdlzvislimyeil:c72c07abb2838abbfeca8fc6685a6663b18d8fa417a29170dc34b033d87b373f@ec2-54-160-120-28.compute-1.amazonaws.com:5432/d74fqpl6qtrn0m"
-#db = SQLAlchemy(app)
+#################################################
+# Heorku database Setup - live
+#################################################
 
+
+
+
+#################################################
+# Flask mode Setup - locally
+#################################################
 
 #Connect to local database
-rds_connection_string = "postgres://bdlzvislimyeil:c72c07abb2838abbfeca8fc6685a6663b18d8fa417a29170dc34b033d87b373f@ec2-54-160-120-28.compute-1.amazonaws.com:5432/d74fqpl6qtrn0m"
-engine = create_engine(f'postgresql://{rds_connection_string}')
+#rds_connection_string = "postgres:2305nseW@localhost:5432/yelp_review_db"
+#engine = create_engine(f'postgresql://{rds_connection_string}')
 
 # reflect an existing database into a new model
-Base = automap_base()
+#Base = automap_base()
 
 # reflect the tables
-Base.prepare(engine, reflect=True)
+#Base.prepare(engine, reflect=True)
 
 # Declaring tables into variables(Save references to each table)
-#p= Base.classes.primaryv1
-#g = Base.classes.genre
-# gm=Base.classes.game_mode
-#t=Base.classes.theme
-# f=Base.classes.franchise
-# age_des=Base.classes.age_description
-# age_rating=Base.classes.age_rating
-# similar=Base.classes.similar_game
-# art=Base.classes.artwork 
 ip=Base.classes.new3_sb_IppudoWestside_db #data base for Eataly Flatiron most reviewed no.2
 et=Base.classes.new2_sb_EatalyFlatiron_db #data base for Eataly Flatiron most reviewed no.2
 tr=Base.classes.new1_sb_shanghaijoe_db #data base for shanghai joe most reviewed no.1
 sgr=Base.classes.toprevframes #data base for overall results top 3 most reviewed
-#ns=Base.classes.yelp_dataseabassframereviewsfinal2
-#ns=Base.classes.new_simil
-
-# gmr=Base.classes.gamemode_rating
 
 # instantiate the SQLAlchemy object
 session = Session(engine)
