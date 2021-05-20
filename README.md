@@ -5,7 +5,7 @@
 Data is more powerful when we share it with others! Let's take what we've learned about HTML and CSS to create a dashboard showing off the analysis.
 
 
-<img alt="Seabass Analysis" src="image/vessel1.jpg" width=600>
+<img alt="Seabass Analysis" src="image/landing-lg.png" width=600>
 
 
 
@@ -14,11 +14,13 @@ Data is more powerful when we share it with others! Let's take what we've learne
 #### Landing page
 
 Large screen:
-![Landing page large screen](image/vessel1.jpg))
+![Landing page large screen](image/landing-lg.png))
 
 Small screen:
-![Landing page small screen](image/vessel1.jpg)
+![Landing page small screen](image/landing-lg)
 ￼
 
 
+
+<img alt="Seabass Analysis" src="image/numberofreviews.jpg" width=600>
 
