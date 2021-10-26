@@ -15,12 +15,11 @@ The purpose of the tool is to gauge the popularity of seabass in different cuisi
 
 
 ## Features
-* Create and Delete servers
-* Join and Leave other's servers
-* Create/Update/Destroy Channels on a server.
-* Live Chat with multiple users on a Channel
-* Direct live chat with individual Users
-* Both Direct Messages and Channel Messages can be updated and deleted with changes being broadcasted live.
+* Natural Language Toolkit to show ratings of subjective, difficult, readability, unique words
+* Insights on how Seafood customers behavior patterns
+* Explore Top recommended restaurants by keyword "seabass"
+* Explore Top reviewed restaurants by keyword "seabass"
+
 
 ## Yelp reviews - Customer Reviews Analysis Dashboard with Seabass
 
