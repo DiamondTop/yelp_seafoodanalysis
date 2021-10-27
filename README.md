@@ -31,17 +31,13 @@ In building this dashboard, we'll create individual pages for each plot and a me
 
 
 
-### Screenshots
-
-This section contains screenshots of each page that must be built, at varying screen widths. These are a guide; you can meet the requirements without having the pages look exactly like the below images.
 
 #### Landing page
 
 Large screen:
 ![Landing page large screen](image/vessel1.png)
 
-Small screen:
-![Landing page small screen](image/vessel1.png)
+
 
 
 
